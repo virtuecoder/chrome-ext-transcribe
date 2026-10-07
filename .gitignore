@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Chrome extension private keys - never commit
+*.pem
+key.pem
+
+# Packaged extensions
+*.crx
+*.zip
+*.xpi
+
+# Build output
+dist/
+build/
+out/
+
+# Dependencies (if tooling is added later)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env / secrets
+.env
+.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.project

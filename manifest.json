@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Transcribe",
+  "version": "1.1",
+  "description": "Transcribe YouTube videos via `just transcribe`",
+
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAypBtNOxivqELtlo9ftoHn8sq7Zm4wS9VJThTG08AsEDwVxdPbwJPNCLaVq8H93OsJmku5XhDTNKQNyfMXs8ZmvO7VPLt1jCxvpF4lgLgoOexU9O+R345ErXoH+diQ4FrZdJss59Pfw6PGlQW3YZuJeM3Uh1UgmI8/ypIMcOhistCB+09D0BSIuXF0jpb5x3cFMvch95umZ2MXKAUPCkfek5c/S9+GtrHDqEr/zqzLt8EIc5UWRPxr3zyr2I5opYhWVVZn/D/9A/x+Gj0JyxitZZsrJkKc3Wmp4Kne8P1d3XQ7Q7ttWp8tUcB5mvu2DFw16K2nNvmmoCucX/BMj+qWQIDAQAB",
+
+  "permissions": [
+    "nativeMessaging"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube Transcribe — summary model"
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

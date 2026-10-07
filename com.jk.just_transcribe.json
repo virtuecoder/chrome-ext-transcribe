@@ -1,0 +1,9 @@
+{
+  "name": "com.jk.just_transcribe",
+  "description": "Native host for YouTube transcription with Muse Spark 1.3 Free",
+  "path": "/Users/jk/work/toolkit/scripts/just-transcribe-host",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://jljadnendidpmedcgofpcmldjgehnfhn/"
+  ]
+}
